@@ -1,0 +1,153 @@
+/*Estiliza o cabeçalho*/
+
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Altera a fonte de todo cabeçalho */
+header,
+section h2,
+section h3,
+form button {
+    font-family: 'Bungee', sans-serif;
+    font-weight: normal;
+}
+
+/*Aplica esta fonte a mais tags*/
+body, input, textarea {
+    font-family: 'roboto',sans-serif;
+}
+
+header {
+    padding: 16px 0;
+    background-color: #182c61;
+    color: #ecf0f1
+}
+
+header nav li {
+    display: inline;
+    margin-left: 16px;
+}
+
+header nav li a {
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container,
+section .container {  /*Coloca o conteude de texto do lado da img*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*Configurando as imagens*/
+.brands-list img {
+    height: 24px; /*Diminui o tamanho*/
+}
+
+.brands-list li {
+    display: inline;
+    margin-right: 8px; /*Distancia entre logo*/
+}
+
+/*Configurando as imagens Colocando o conteude de texto no topo*/
+section .container { 
+    align-items: flex-start;
+}
+
+/*Configurando distancia de borda*/
+section {
+    padding: 24px 0;
+}
+
+section h2 {
+    margin-bottom: 16px;
+}
+
+section {
+    color:#182c61
+}
+
+section p {
+    margin-bottom: 8px;
+}
+
+.store-front {
+    margin-right: 32px;
+}
+
+.social-links img {
+    height: 24px;
+}
+
+.social-links li {
+    display: inline;
+    margin: 8px;
+}
+
+/*tira a sujeira das logo*/
+.social-links {
+    text-decoration: none;
+}
+
+
+#contact .container {
+    display: block;
+}
+
+.contact-methods {
+    display: flex;
+    justify-content: space-between; /* espacamento entre seções*/
+}
+
+/*Formatação da tabela*/
+form input,
+form textarea,
+form button {
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+/*desabilita poder ajustar o tamnho da caixa de texto manualmente*/
+form textarea {
+    resize: none;
+    height: 180px; /*aumenta a caixa de texto Sua mensagem */
+
+}
+
+section h3 {
+    margin: button 16px;
+}
+
+form button {
+    background-color: #182c61;
+    color: #ecf0f1;
+    border: none; /*tira as bordas preta do botão Enviar*/
+    cursor: pointer;
+}
+
+/*Faz ao parssar o mouse em cima do botao ele troca de cor no botão Enviar*/
+form button:hover {
+    background-color: #3c6ca7;
+}
+
+input:focus, textarea:focus {
+    outline-color: #182c61;
+}
+
+/* Formatação do rodapê*/
+footer {
+    background-color: #182c61; /*cor de fundo*/
+    color: #ecf0f1; /*cor das letras*/
+    padding: 16px 0; /*espacamento de laterais*/
+}
